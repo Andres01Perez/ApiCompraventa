@@ -17,4 +17,3 @@ namespace ApiCompraventa.DTOs
         public ICollection<Articulo> Articulos { get; set; }
     }
 }
-}

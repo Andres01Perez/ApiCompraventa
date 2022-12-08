@@ -1,36 +1,36 @@
-﻿//using AutoMapper;
-//using Vehicles.DTOs;
-//using Vehicles.Entities;
+﻿using AutoMapper;
+using ApiCompraventa.DTOs;
+using ApiCompraventa.Entidades;
 
-//namespace Vehicles.Helpers
-//{
-//    public class AutoMapperProfiles : Profile
-//    {
-//        public AutoMapperProfiles()
-//        {
-//            CreateMap<Brand, BrandDTO>().ReverseMap(); 
-//            CreateMap<BrandCreationDTO, Brand>();
+namespace ApiCompraventa.Helpers
+{
+    public class AutoMapperProfiles : Profile
+    {
+        public AutoMapperProfiles()
+        {
+            CreateMap<Marca, MarcaDTOs>().ReverseMap();
+            CreateMap<MarcaDTOsCreation, Marca>();
 
-//            CreateMap<DocumentType, DocumentTypeDTO>().ReverseMap();
-//            CreateMap<DocumentTypeCreationDTO, DocumentType>();
+            CreateMap<TipoDocumento, TipoDocumentoDTOs>().ReverseMap();
+            CreateMap<TipoDocumentoDTOsCreation, TipoDocumento>();
 
-//            CreateMap<History, HistoryDTO>().ReverseMap();
-//            CreateMap<HistoryCreationDTO, History>();
+            CreateMap<Historial, HistorialDTOs>().ReverseMap();
+            CreateMap<HistorialDTOsCreation, Historial>();
 
-//            CreateMap<Procedure, ProcedureDTO>().ReverseMap();
-//            CreateMap<ProcedureCreationDTO, Procedure>();
+            CreateMap<Estado, EstadoDTOs>().ReverseMap();
+            CreateMap<EstadoDTOsCreation, Estado>();
 
-//            CreateMap<Vehicle, VehicleDTO>().ReverseMap();
-//            CreateMap<VehicleCreationDTO, Vehicle>();
+            CreateMap<Articulo, ArticuloDTOs>().ReverseMap();
+            CreateMap<ArticuloDTOsCreation, Articulo>();
 
-//            CreateMap<VehicleType, VehicleTypeDTO>().ReverseMap();
-//            CreateMap<VehicleTypeCreationDTO, VehicleType>();
+            CreateMap<Categorias, CategoriasDTOs>().ReverseMap();
+            CreateMap<CategoriasDTOsCreation, Categorias>();
 
-//            CreateMap<Detail, DetailDTO>().ReverseMap();
-//            CreateMap<DetailCreationDTO, Detail>();
+            CreateMap<Detalles, DetallesDTOs>().ReverseMap();
+            CreateMap<DetallesDTOsCreation, Detalles>();
 
-//            CreateMap<VehiclePhoto, VehiclePhotoDTO>().ReverseMap();
-//            CreateMap<VehiclePhotoCreationDTO, VehiclePhoto>();
-//        }
-//    }
-//}
+            CreateMap<FotoArticulo, FotoArticuloDTOs>().ReverseMap();
+            CreateMap<FotoArticuloDTOsCreation, FotoArticulo>();
+        }
+    }
+}
