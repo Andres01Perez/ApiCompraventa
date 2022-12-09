@@ -1,4 +1,4 @@
-﻿namespace Vehicles.Entities
+﻿namespace ApiCompraventa.Entidades
 {
     public class AuthenticationAnswer
     {

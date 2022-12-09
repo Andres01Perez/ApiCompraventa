@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using System.ComponentModel.DataAnnotations;
 
-namespace Vehicles.Entities
+namespace ApiCompraventa.Entidades
 {
     public class UserCredential : IdentityUser
     {

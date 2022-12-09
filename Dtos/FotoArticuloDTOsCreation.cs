@@ -12,6 +12,6 @@ namespace ApiCompraventa.DTOs
         public Articulo Articulo { get; set; }
 
         [Display(Name = "URL Photo")]
-        public string ImageId { get; set; }
+        public IFormFile ImageId { get; set; }
     }
 }
